@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - Selaras Beach</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Selaras Beach</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="story.html">Story</a>
+      <a href="gallery.html">Galeri</a>
+      <a href="index.html#services">Layanan</a>
+      <a href="index.html#reservation">Reservasi</a>
+      <a href="index.html#contact">Kontak</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Galeri -->
+  <section class="gallery">
+    <div class="container">
+      <h2>Galeri Foto</h2>
+      <div class="gallery-grid">
+        <img src="assets/images/pantai1.jpg" alt="Pantai" onclick="openLightbox(this)">
+        <img src="assets/images/pantai2.jpg" alt="Pantai" onclick="openLightbox(this)">
+        <img src="assets/images/pantai3.jpg" alt="Pantai" onclick="openLightbox(this)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="testimonial">
+    <div class="container">
+      <h2>Testimoni</h2>
+      <div class="carousel" id="testimonialCarousel">
+        <div class="slide">“Tempat yang luar biasa untuk healing!” 🌴</div>
+        <div class="slide">“Suasana tropisnya bikin betah.” 🌊</div>
+        <div class="slide">“Minumannya segar banget, sunset indah.” 🍹</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="">
+  </div>
+
+  <footer>
+    <p>© 2025 Selaras Beach | All Rights Reserved</p>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
