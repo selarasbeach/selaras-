@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selaras Beach</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Selaras Beach</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="story.html">Story</a>
+      <a href="gallery.html">Galeri</a>
+      <a href="#services">Layanan</a>
+      <a href="#reservation">Reservasi</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Feel the Freedom</h1>
+      <p>Rasakan vibes tropis & hangat di Selaras Beach</p>
+      <a href="#reservation" class="btn">Reservasi Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section class="about">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p>Selaras Beach adalah tempat terbaik untuk menikmati keindahan laut, 
+      suasana hangat tropis, dan momen santai bersama teman & keluarga.</p>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Layanan</h2>
+      <div class="card-grid">
+        <div class="card">🍹<h3>Bar Mini</h3><p>Nikmati minuman segar tropis</p></div>
+        <div class="card">🏄<h3>Paddle Board</h3><p>Serunya bermain di laut</p></div>
+        <div class="card">🌴<h3>Spot Nongkrong</h3><p>Tempat santai dengan vibes tropis</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservasi -->
+  <section class="reservation" id="reservation">
+    <div class="container">
+      <h2>Reservasi</h2>
+      <form id="reservationForm">
+        <input type="text" placeholder="Nama" required>
+        <input type="date" required>
+        <input type="number" placeholder="Jumlah orang" required>
+        <button type="submit" class="btn">Kirim Reservasi</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Kontak & Lokasi</h2>
+      <p>Hubungi kami di WhatsApp atau kunjungi lokasi di maps</p>
+      <p>📍 Pulau Dabo Singkep</p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Pulau+Dabo+Singkep&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Selaras Beach | All Rights Reserved</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
